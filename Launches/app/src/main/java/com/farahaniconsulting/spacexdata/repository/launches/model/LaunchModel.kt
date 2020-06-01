@@ -2,6 +2,8 @@ package com.farahaniconsulting.spacexdata.repository.launches.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.text.SimpleDateFormat
+import java.util.*
 
 data class LaunchModel(
     @SerializedName("details")
@@ -15,7 +17,7 @@ data class LaunchModel(
     @SerializedName("launch_date_unix")
     val launchDateUnix: Int?,
     @SerializedName("launch_date_utc")
-    val launchDateUtc: String?,
+    val launchDateUtc: Date?,
     @SerializedName("launch_failure_details")
     val launchFailureDetails: LaunchFailureDetails?,
     @SerializedName("launch_site")
@@ -50,4 +52,6 @@ data class LaunchModel(
     val timeline: Timeline?,
     @SerializedName("upcoming")
     val upcoming: Boolean?
+
 )
+
