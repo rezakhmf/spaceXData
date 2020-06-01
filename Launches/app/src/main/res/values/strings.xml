@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Spacex Data</string>
+    <string name="empty_list">no launches found</string>
+</resources>
